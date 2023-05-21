@@ -11,7 +11,7 @@ import { useState } from 'react';
 import {AuthProvider} from './context/Auth'
 import SinglePost from './pages/SinglePost'
 function App() {
-  
+  console.log('environment',process.env)
    //<container>gives left right margins and padding centerise the content
   return (
     
