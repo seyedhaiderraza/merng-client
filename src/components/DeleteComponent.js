@@ -15,7 +15,8 @@ const DeleteComponent = (props) => {
         refetchQueries: [{ query: FETCH_ALL_POSTS_QUERY }],//updates apolloclient cache 
     
 })
-  return ( <Popup inverted content={values.commentId?'delete comment':'delete post'} trigger={
+  return ( <Popup 
+  inverted content={values.commentId?'delete comment':'delete post'} trigger={
     <Button  labelPosition='right' floated='right' onClick={deletePostOrComment}>
         <Button color='grey' basic={false}>
         <Icon name='trash' style={{margin:0}}/>

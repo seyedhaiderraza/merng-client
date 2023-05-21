@@ -53,7 +53,10 @@ const SinglePost = () => {
         postMarkup= <p>Loading the post</p>
     }
     else if(error){
-        postMarkup= <h1>Please Login <br/><Button color='teal' as={Link} to={'/login'}>Login</Button> <br/>or<br/> Register<br/><Button color='blue' as={Link} to={'/register'}>Register</Button> <br/>to view this post</h1>
+        postMarkup= <h1>Please Login <br/>
+        <Button color='teal' as={Link} to={'/login'}>Login</Button>
+         <br/>or<br/> Register<br/><Button color='blue' as={Link} to={'/register'}>Register</Button>
+          <br/>to view this post</h1>
       
     }
     else{
