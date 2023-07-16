@@ -1,70 +1,128 @@
-# Getting Started with Create React App
+# JS-dice-game
+1. # Project summary
+----------------
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a Javascript only Project using HTML5/CSS3 to show a Finance app consisting of - login, transactions-deposit/withdrawal, transfer to, close account functionalities.
 
-## Available Scripts
+2. # Project URL
+----------------
 
-In the project directory, you can run:
+https://js-finance-app.vercel.app/
 
-### `npm start`
+4. # Technology Stack used
+-----------------
+HTML5/CSS3
+JavaScript: 📜 
+  - DOM Manipulation,
+  - EventListeners and handling
+  - Array methods - push, pop, shift, unshift, slice, splice
+  - functions
+vercel deployment
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+5. # Functional Requirements/Acceptance Criteria
+-----------------
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+HOMEPAGE NO LOGIN
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+GIVEN: user visits finance index page
+WHEN: user views the page
+THEN: user is not logged in
+AND: login to get started is displayed at header
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+HOMEPAGE LOGIN
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+GIVEN: user visits finance index page
+WHEN: user enters username 'jsmith' and pin 1234
+THEN: user is able to log in
+AND: able to see welcome back user on top header
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+TRANSACTIONS
 
-### `npm run eject`
+GIVEN:user is logged in
+WHEN: transactions is displayed on left grid
+THEN: transactions display withdrawal and deposits
+AND: transactions are in ascending order
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+TRANSFER
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+GIVEN: user is logged in
+WHEN: user enters any full name from the test data below ( 'Jane Doe' etc)
+AND: user enters amount< available amount
+THEN: amount is shown as withdrawal in transaction
+AND amount displayed as deposit is shown for login user jdoe pin 5678
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+DEPOSIT
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+GIVEN: user is logged in
+WHEN: user enters amount > 101 $
+THEN: amount is shown as deposits in transaction
+AND amount displayed as deposit is shown for login user jdoe pin 5678
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+CLOSE Account
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+GIVEN: user is logged in
+WHEN: user enters username and password in close account
+THEN: the account temporarily gets disabled
+AND: user unable to login back with the same credentials
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+ACCOUNT SUMMARY
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+GIVEN: user is logged in
+WHEN: user scrolls down
+THEN: the user is able to see acount summary - total deposits, total withdrawal, total interests
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+6. # Test Data(if any)
+-----------------
+ 1. Transfer To : 'John Smith',
+          Login : 'jsmith',
+            pin : 1234,
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    
+2.  Transfer To :  'Jane Doe',
+          Login : 'jdoe'
+          pin: 5678,
+    
+3. Transfer To : 'Bob Johnson',
+          pin: 9876,
+           Login : 'bjohnson'
+ 4. Transfer To : 'Alice Lee',
+          pin: 2468,
+          Login: 'alee'
+    
+ 5.  Transfer To : 'Tom Brown',
+          pin: 1357,
+          Login: 'tbrown'
+ 6. Transfer To :  'Sara Kim',
+          pin: 3690,
+          Login: 'skim'
+
+7. # Screens
+------------------
+### Homepage without Login:
+![image](https://github.com/seyedhaiderraza/JS-dice-game/assets/129282622/1e1f1d33-0a6f-46ef-99a7-26a24985c56f)
+
+### HomePage with Login:
+data: jsmith, 1234
+![image](https://github.com/seyedhaiderraza/JS-dice-game/assets/129282622/0de0ae03-972f-4d79-a6fd-3b821d9a0da7)
+
+
+
+
+
+
+
+
+
+
+
