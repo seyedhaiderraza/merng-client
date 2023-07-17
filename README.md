@@ -15,7 +15,7 @@ https://merng-client-lemon.vercel.app/
 client:
 HTML5/CSS3, JavaScript, React, Apollo-Client
 Backend:
-GraphQL, Apollo-Server, Node, Express, MongoDB
+GraphQL, Apollo-Server, Node, Express, MongoDB, JWT Auth
 Deployment: Vercel
 
 5. # Functional Requirements/Acceptance Criteria
