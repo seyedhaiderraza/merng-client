@@ -98,18 +98,25 @@ Deployment: Vercel
 7. # Screens
 ------------------
 ### Homepage (Not Logged in)
+![image](https://github.com/seyedhaiderraza/merng-client/assets/129282622/fd01981b-9e0d-4824-b576-4937f9ee80af)
 
 ### Homepage (Logged in)
+![image](https://github.com/seyedhaiderraza/merng-client/assets/129282622/3176ecd8-4c54-408e-b470-940bc06700c0)
 
 ### Create Post section
+![image](https://github.com/seyedhaiderraza/merng-client/assets/129282622/484d5283-748d-4805-a731-1a4dc44dfd67)
 
 ### homepage Post
+![image](https://github.com/seyedhaiderraza/merng-client/assets/129282622/ba63da0b-1f0e-4f74-ba09-ea481f1363af)
 
 ### Profile Page
+![image](https://github.com/seyedhaiderraza/merng-client/assets/129282622/8db38b34-6f8c-4725-8bb5-97c9ff435f73)
 
 ### Login Page
+![image](https://github.com/seyedhaiderraza/merng-client/assets/129282622/8e27fe29-9b39-4213-9c9e-c464a8d9f4fb)
 
 ### Register Page
+![image](https://github.com/seyedhaiderraza/merng-client/assets/129282622/a6a04b42-ae39-4314-8e0c-060824ab654f)
 
 
 
